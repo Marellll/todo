@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="form">
+        <a href="#" class="form__logo logo">Your Logo</a>
+        <div class="form__content">
+          <h1 class="form__title">Регистрация</h1>
+          <p class="form__subtitle">Если у вас уже есть учетная запись</p>
+          <p class="form__subtitle">
+            Вы можете
+            <a href="./sign-in.html" class="form__link"> авторизироваться тут !</a>
+          </p>
+
+          <form action="#" class="form__form-box form-box">
+            <div class="form-box__input-box input-box">
+              <input id ="mail"
+                class="input-box__info"
+                for="email"
+                placeholder="email"
+                required
+              />
+            </div>
+            <div class="form-box__input-box input-box">
+              <input id ="input"
+              class="input-box__info"
+                name="user"
+                id="user"
+                placeholder="Введиет ник"
+              />
+            </div>
+            <div class="form-box__input-box input-box">
+              <input id ="pass"
+              class="input-box__info"
+                name="password"
+                id="password"
+                placeholder="Введите пароль"
+              />
+            </div>
+            <div class="form-box__input-box input-box">
+           
+              <input id ="pass"
+              class="input-box__info"
+                name="confrim-password"
+                id="confrim-password"
+                placeholder="Повторите пароль"
+              />
+            </div>
+            <div class="form-box__btn-box btn-box">
+              <button type="submit" id="add_btn" onclick="alerted();">Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="promo__box">
+          <div class="promo__content">
+            <img src="h.png" alt="Saly" class="promo__image" />
+            <h1 class="promo__title">Зарегистрируйтесь по имени</h1>
+            <p class="promo__subtitle">Это просто!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js.js"></script>
+
+    <script type="module" >
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAXD_DEyeVwGrP6ZHu_8aO6TO3u-ur3w5k",
+          authDomain: "aaaa-8c97a.firebaseapp.com",
+          projectId: "aaaa-8c97a",
+          storageBucket: "aaaa-8c97a.appspot.com",
+          messagingSenderId: "765050452985",
+          appId: "1:765050452985:web:8109236813c96506a0db28",
+          measurementId: "G-BVGF7NDLRX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+  </body>
+</html>
